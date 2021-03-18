@@ -86,19 +86,20 @@ No Modules.
 
 | Name |
 |------|
-| [aws_ecr_lifecycle_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_lifecycle_policy) |
-| [aws_ecr_repository](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository) |
-| [aws_ecr_repository_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository_policy) |
+| [aws_ecrpublic_repository](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecrpublic_repository) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| about | n/a | `string` | `"About text"` | no |
+| architectures | n/a | `list(string)` | <pre>[<br>  "Linux"<br>]</pre> | no |
 | common\_tags | Implements the common tags scheme | `map(any)` | n/a | yes |
-| image\_tag\_mutability | For sone strange reason this is optional behaviour. | `string` | `"IMMUTABLE"` | no |
+| description | n/a | `string` | `"Description"` | no |
+| image | n/a | `string` | `""` | no |
 | name | The name of the registry | `string` | n/a | yes |
-| repositorypolicy | Pass this variable a Json Policy | `string` | n/a | yes |
-| scan\_on\_push | Security Scan your new container before you add it to the registry | `bool` | `true` | no |
+| operating\_systems | n/a | `list(string)` | <pre>[<br>  "x86-64"<br>]</pre> | no |
+| usage\_text | n/a | `string` | `"Usage Text"` | no |
 
 ## Outputs
 
@@ -107,7 +108,7 @@ No Modules.
 | ecr | The full details of the repo |
 | ecr\_arn | The Amazon resource name for the repository |
 | ecr\_repo\_name | The name of the repository |
-| ecr\_repository\_url | The URL of your new registry |
+| ecr\_repository\_uri | The URL of your new registry |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Information
