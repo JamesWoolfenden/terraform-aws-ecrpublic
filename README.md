@@ -76,39 +76,39 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_ecrpublic_repository](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecrpublic_repository) |
+| Name | Type |
+|------|------|
+| [aws_ecrpublic_repository.repository](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecrpublic_repository) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| about | n/a | `string` | `"About text"` | no |
-| architectures | n/a | `list(string)` | <pre>[<br>  "Linux"<br>]</pre> | no |
-| common\_tags | Implements the common tags scheme | `map(any)` | n/a | yes |
-| description | n/a | `string` | `"Description"` | no |
-| image | n/a | `string` | `""` | no |
-| name | The name of the registry | `string` | n/a | yes |
-| operating\_systems | n/a | `list(string)` | <pre>[<br>  "x86-64"<br>]</pre> | no |
-| usage\_text | n/a | `string` | `"Usage Text"` | no |
+| <a name="input_about"></a> [about](#input\_about) | n/a | `string` | `"About text"` | no |
+| <a name="input_architectures"></a> [architectures](#input\_architectures) | n/a | `list(string)` | <pre>[<br>  "Linux"<br>]</pre> | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Implements the common tags scheme | `map(any)` | n/a | yes |
+| <a name="input_description"></a> [description](#input\_description) | n/a | `string` | `"Description"` | no |
+| <a name="input_image"></a> [image](#input\_image) | n/a | `string` | `""` | no |
+| <a name="input_name"></a> [name](#input\_name) | The name of the registry | `string` | n/a | yes |
+| <a name="input_operating_systems"></a> [operating\_systems](#input\_operating\_systems) | n/a | `list(string)` | <pre>[<br>  "x86-64"<br>]</pre> | no |
+| <a name="input_usage_text"></a> [usage\_text](#input\_usage\_text) | n/a | `string` | `"Usage Text"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| ecr | The full details of the repo |
-| ecr\_arn | The Amazon resource name for the repository |
-| ecr\_repo\_name | The name of the repository |
-| ecr\_repository\_uri | The URL of your new registry |
+| <a name="output_ecr"></a> [ecr](#output\_ecr) | The full details of the repo |
+| <a name="output_ecr_arn"></a> [ecr\_arn](#output\_ecr\_arn) | The Amazon resource name for the repository |
+| <a name="output_ecr_repo_name"></a> [ecr\_repo\_name](#output\_ecr\_repo\_name) | The name of the repository |
+| <a name="output_ecr_repository_uri"></a> [ecr\_repository\_uri](#output\_ecr\_repository\_uri) | The URL of your new registry |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Information
