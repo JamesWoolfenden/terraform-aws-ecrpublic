@@ -8,8 +8,7 @@ variable "common_tags" {
   description = "Implements the common tags scheme"
 }
 
-variable "image" {
-  type    = string
+variable "logo_image_blob" {
   default = ""
 }
 
