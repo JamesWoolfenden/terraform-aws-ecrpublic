@@ -134,7 +134,9 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "ec2:DescribeAccountAttributes"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
@@ -142,9 +144,12 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "ecr-public:CreateRepository",
                 "ecr-public:DeleteRepository",
+                "ecr-public:DescribeRepositories",
                 "ecr-public:ListTagsForResource"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
