@@ -1,6 +1,6 @@
 # terraform-aws-ecrpublic
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-ecrpublic.svg)](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-ecrpublic.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-ecrpublic/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
